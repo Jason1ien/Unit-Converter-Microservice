@@ -20,11 +20,20 @@ Place the conversion requests in the specified input file.
 The program will continuously monitor the input file. 
 Upon detecting content, it will perform the conversion, write the result to the output file, and clear the input file.
 
---- EXAMPLE USAGE ---
-Suppose you want to convert 150 grams to ounces. 
-Place the following content in input file:
-    1125
-After running the program, you will find the result '5.29 oz' in the output file.
+--- SENDING DATA ---
+To send data, the user must write a string onto the specified input file that it points to.
+Suppose you want to convert 150 grams to ounces with the input file being inputService.txt.
+In Python, you would write:
+    f = open('inputService.txt', 'w', encoding="utf-8")
+    f.write('1125')
+
+--- RECEIVING DATA ---
+To receive data, the user must provide an output file that is a text file. This is where the data is eventually printed onto.
+Suppose you want to receive data from the output text file named outputService.txt.
+In Python, you would write:
+    f = open('outputService.txt', 'r', encoding="utf-8")
+    data = f.read()
+Inside the variable data, will be the result '5.29 oz' as a string.
 
 --- NOTE ---
 - The program is loaded with an example inputService and outputService as well as an example on how to make a request.
@@ -32,14 +41,3 @@ After running the program, you will find the result '5.29 oz' in the output file
 - The conversion factors are predefined within the script for grams to ounces, grams to pounds, ounces to grams, ounces to pounds, pounds to grams, and pounds to ounces.
 - If the conversion units are invalid, the program writes 'Invalid conversion units' to the output file.
 
----- COMMUNICATION CONTRACT ----
-
-1. Members will do all communication over Discord.
-
-2. Members should respond within 24 hours over Discord. If a response cannot be made within 24 hours, they should communicate that ahead of time and let the other know the time frame at which they will be unavailable.
-
-3. Members should keep each other updated on the progress of the microservice. If a delay in the microservice occurs, the individual is responsible for letting the other know ahead of time of any delays.
-
-4. If a change needs to be made to the microservice, the members should notify each other 24 hours before the expected deadline of the microservice. Members should prevent last-minute changes if at all possible.
-
-5. Members must notify each other about any current class status. Meaning if one decides to drop the class, they must give notice. Members should try their best to communicate and prevent ghosting.
