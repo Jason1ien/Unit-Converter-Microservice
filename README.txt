@@ -31,3 +31,15 @@ After running the program, you will find the result '5.29 oz' in the output file
 - The program uses an infinite loop to continuously check for input content.
 - The conversion factors are predefined within the script for grams to ounces, grams to pounds, ounces to grams, ounces to pounds, pounds to grams, and pounds to ounces.
 - If the conversion units are invalid, the program writes 'Invalid conversion units' to the output file.
+
+---- COMMUNICATION CONTRACT ----
+
+1. Members will do all communication over Discord.
+
+2. Members should respond within 24 hours over Discord. If a response cannot be made within 24 hours, they should communicate that ahead of time and let the other know the time frame at which they will be unavailable.
+
+3. Members should keep each other updated on the progress of the microservice. If a delay in the microservice occurs, the individual is responsible for letting the other know ahead of time of any delays.
+
+4. If a change needs to be made to the microservice, the members should notify each other 24 hours before the expected deadline of the microservice. Members should prevent last-minute changes if at all possible.
+
+5. Members must notify each other about any current class status. Meaning if one decides to drop the class, they must give notice. Members should try their best to communicate and prevent ghosting.
