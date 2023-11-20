@@ -41,3 +41,15 @@ Inside the variable data, will be the result '5.29 oz' as a string.
 - The conversion factors are predefined within the script for grams to ounces, grams to pounds, ounces to grams, ounces to pounds, pounds to grams, and pounds to ounces.
 - If the conversion units are invalid, the program writes 'Invalid conversion units' to the output file.
 
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
