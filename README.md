@@ -43,13 +43,11 @@ Inside the variable data, will be the result '5.29 oz' as a string.
 
 ```mermaid
 sequenceDiagram
-    participant dotcom
-    participant iframe
-    participant viewscreen
-    dotcom->>iframe: loads html w/ iframe url
-    iframe->>viewscreen: request template
-    viewscreen->>iframe: html & javascript
-    iframe->>dotcom: iframe ready
-    dotcom->>iframe: set mermaid data on iframe
-    iframe->>iframe: render mermaid
+    participant user
+    participant mainProgram
+    participant Microservice(unitConversion.py)
+    user->>Presses button to convert
+    mainProgram->>Microservice(unitConversion.py): request conversion
+    Microservice(unitConversion.py)->>mainProgram: send converted number
+    mainProgram->>user: Display converted number
 ```
