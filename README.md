@@ -46,7 +46,7 @@ sequenceDiagram
     participant user
     participant mainProgram
     participant Microservice(unitConversion.py)
-    user->>Presses button to convert
+    user->>mainProgram: Presses button to convert
     mainProgram->>Microservice(unitConversion.py): request conversion
     Microservice(unitConversion.py)->>mainProgram: send converted number
     mainProgram->>user: Display converted number
